@@ -29,10 +29,13 @@ class StdOutListener(StreamListener):
         global stream
         if tweet_count < tweet_limit:
             tweet = json.loads(data)
-            tweet_data.append(str(tweet["text"]))
-            #Optional print
-            print(tweet["text"] + tweet["created_at"])
-            tweet_count += 1
+            try:
+                  tweet_data.append(str(tweet["text"]))
+                  #Optional print
+                  print(tweet["text"] + tweet["created_at"])
+                  tweet_count += 1
+            except:
+                  print("An exception has occured")
             return True
         else:
             stream.disconnect()
