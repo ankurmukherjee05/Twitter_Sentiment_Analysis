@@ -7,8 +7,14 @@ Twitter Sentiment Analysis consists of two Python files. "Tweet_Stream.py" and "
 
 ### Prerequisites
 1. Twitter developer account - This can be created at the following link: https://developer.twitter.com/en/apply-for-access
-Some basic questions will need to be answered which will influence the length of time it will take for Twitter to respond to your access request.
+Some basic questions will need to be answered which will influence the length of time it will take for Twitter to respond to a users access request.
 
-2. Python 3.0 - Python 3.0 will need to be installed and configured on your machine. The programs provided in this repository can be run through both the command line or a GUI such as Spyder.
+2. Python 3.0 - Python 3.0 (or greater) will need to be installed and configured on your machine. The programs provided in this repository can be run through both the command line or a GUI such as Spyder.
 
 ## Deployment
+Once a user ha both the prerequisites above, deployment of this tool can be done in 2 steps:
+
+#### Step 1:
+First the tweets to be analyzed will need to be collected. This can be done with the file "Tweet_Stream.py". Open the file and enter the access and consumer keys that were provided by Twitter after approval of the developer account. Once this is complete go to line 15-17 to the variables "tweet_limit" and "tracklist". These values will set the number of tweets desired and the topic respectively. tweet_limit will need to be a num, and tracklist can be both a single string or a list of strings. Please reference the Tweepy documentation on streaming to for any inquiries. The print statement on line 35 can be commented out when pulling large exports as it will slow down the program. It has been added as a useful tool for troubelshooting issues that may arise and verification that the program is working as expected. Aftet running the program the results will be stored in file "stream_data.csv" which will be created in the current working directory. The name of this file can be modified on line 58.
+
+#### Step 2:
