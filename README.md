@@ -2,6 +2,10 @@
 
 Twitter Sentiment Analysis is a tool which streams tweets on any chosen topic, and performs a positive/negative sentiment analysis on the results. The sentiment analysis is performed using the supervised machine learning model of Naive Bayes and a training set of 10,000 tweets. 
 
+- [Getting Started](#getting-started)
+- [Deployment](#deployment)
+- [Author](#author)
+
 ## Getting Started
 Twitter Sentiment Analysis consists of two Python files. "Tweet_Stream.py" and "NB_Classifier.py". To run these Python 3 will need to installed and configured. A Twitter developer account will also need to be created as the tokens provided will will need to be added into the code as instructed in the comments. 
 
